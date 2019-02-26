@@ -1,0 +1,34 @@
+\documentclass[aps,showpacs,groupedaddress]{revtex4}
+\usepackage{graphicx}
+\usepackage{epsfig}
+%\usepackage{caption}
+%\usepackage{subcaption}
+\usepackage{epsf}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{amsmath}
+\usepackage{braket}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{mathrsfs}
+\usepackage{bm}
+\usepackage{wasysym}
+\let\vec\bm
+
+\makeatletter
+\renewcommand{\fnum@figure}{Fig. \thefigure}
+\makeatother
+
+\begin{document}
+
+\begin{equation}
+\label{eq1}
+\begin{split}
+F(x,t)=-2\pi ig_{k_{0}}e^{ik_{0}(x-ct)}e^{-(\Gamma/2)(ct-x)}\theta(ct-x)\\
+=g_{k_{0}}\int_{-\infty}^{\infty}dk[\frac{e^{ikx-i\nu_{k}t}}{\nu_{k}-(\omega-i\Gamma/2)}-\frac{e^{ikx-i\omega t-\Gamma t/2}}{\nu_{k}-(\omega-i\Gamma/2)}]
+\end{split}
+\end{equation}
+
+
+
+\end{document}
