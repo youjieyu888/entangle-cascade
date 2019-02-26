@@ -117,7 +117,7 @@ single photon:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $F(x,t)=\int_{-\infty}^{\infty}dkg_{k}[\frac{e^{ikx-i\nu_{k}t}-e^{ikx-i\omega t-\Gamma t/2}}{\nu_{k}-\omega+i\Gamma/2}]$
+\begin_inset Formula $F(x,t)=\int_{-\infty}^{\infty}dkg_{k}[\frac{e^{ikx-i\nu_{k}t}}{\nu_{k}-(\omega-i\Gamma/2)}-\frac{e^{ikx-i\omega t-\Gamma t/2}}{\nu_{k}-(\omega-i\Gamma/2)}]$
 \end_inset
 
 
@@ -131,7 +131,7 @@ single photon:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $ $
+\begin_inset Formula $=g_{k_{0}}\int_{-\infty}^{\infty}dk[\frac{e^{ikx-i\nu_{k}t}}{\nu_{k}-(\omega-i\Gamma/2)}-\frac{e^{ikx-i\omega t-\Gamma t/2}}{\nu_{k}-(\omega-i\Gamma/2)}]$
 \end_inset
 
 

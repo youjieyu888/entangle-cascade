@@ -138,6 +138,20 @@ single photon:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula $F(x,t)=g_{k_{0}}\int_{0}^{\infty}dk\frac{e^{ikx-i\nu_{k}t}}{\nu_{k}-(\omega-i\Gamma/2)}+g_{k_{0}}\int_{-\infty}^{0}dk\frac{e^{ikx-i\nu_{k}t}}{\nu_{k}-(\omega-i\Gamma/2)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F(x,t)=-2\pi ig_{k_{0}}e^{ik_{0}(x-ct)}e^{-(\Gamma/2)(ct-x)}\theta(ct-x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 in the Schrodinger picture:
 \end_layout
 
