@@ -138,11 +138,25 @@ single photon:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula $F(x,t)=g_{k_{0}}\int_{0}^{\infty}dk\frac{e^{ikx-i\nu_{k}t}}{\nu_{k}-(\omega-i\Gamma/2)}+g_{k_{0}}\int_{-\infty}^{0}dk\frac{e^{ikx-i\nu_{k}t}}{\nu_{k}-(\omega-i\Gamma/2)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F(x,t)=-2\pi ig_{k_{0}}e^{ik_{0}(x-ct)}e^{-(\Gamma/2)(ct-x)}\theta(ct-x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 in the Schrodinger picture:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $f(k,q,t)=-\frac{e^{-i(\nu_{k}+\nu_{q})t}}{[i(\nu_{k}+\nu_{q}-\omega_{ac})-\frac{1}{2}\Gamma_{a}][i(\nu_{q}-\omega_{bc})-\frac{1}{2}\Gamma_{b}]}-\frac{e^{i(-\omega_{ac})t-\frac{\Gamma_{a}}{2}t}}{[i(\nu_{k}+\nu_{q}-\omega_{ac})-\frac{1}{2}\Gamma_{a}][i(\nu_{k}-\omega_{ab})-\frac{1}{2}(\Gamma_{a}-\Gamma_{b})]}+\frac{e^{i(-\nu_{k}-\omega_{bc})t-\frac{\Gamma_{b}}{2}t}}{[i(\nu_{k}-\omega_{ab})-\frac{1}{2}(\Gamma_{a}-\Gamma_{b})][i(\nu_{q}-\omega_{bc})-\frac{1}{2}\Gamma_{b}]}$
+\begin_inset Formula $f(k,q,t)=-(\frac{e^{-i(\nu_{k}+\nu_{q})t}}{[i(\nu_{k}+\nu_{q}-\omega_{ac})-\frac{1}{2}\Gamma_{a}][i(\nu_{q}-\omega_{bc})-\frac{1}{2}\Gamma_{b}]}+\frac{e^{i(-\omega_{ac})t-\frac{\Gamma_{a}}{2}t}}{[i(\nu_{k}+\nu_{q}-\omega_{ac})-\frac{1}{2}\Gamma_{a}][i(\nu_{k}-\omega_{ab})-\frac{1}{2}(\Gamma_{a}-\Gamma_{b})]}-\frac{e^{i(-\nu_{k}-\omega_{bc})t-\frac{\Gamma_{b}}{2}t}}{[i(\nu_{k}-\omega_{ab})-\frac{1}{2}(\Gamma_{a}-\Gamma_{b})][i(\nu_{q}-\omega_{bc})-\frac{1}{2}\Gamma_{b}]})$
 \end_inset
 
  ( overall factors 
@@ -160,7 +174,11 @@ in the Schrodinger picture:
 \end_layout
 
 \begin_layout Standard
-FT of the first term:
+FT of the first term: build the axis so that 
+\begin_inset Formula $x_{2}>0$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -205,14 +223,18 @@ singularities:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\int_{-\infty}^{\infty}dk(-2\pi i)e^{-i\nu_{k}t}e^{ikx_{1}}[\frac{e^{iq_{2}(x_{2}-ct)}-e^{iq_{1}(x_{2}-ct)}}{q_{2}-q_{1}}\theta(ct-x_{2})\theta(q)+\frac{e^{iq_{2}(-x_{2}-ct)}-e^{iq_{1}(-x_{2}-ct)}}{q_{2}-q_{1}}\theta(ct+x_{2})\theta(-q)]$
+we can drop the second term because it is the incoming wave
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\int_{-\infty}^{\infty}dk(-2\pi i)e^{-i\nu_{k}t}e^{ikx_{1}}[\frac{e^{iq_{2}(x_{2}-ct)}-e^{iq_{1}(x_{2}-ct)}}{q_{2}-q_{1}}\theta(ct-x_{2})$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\int_{-\infty}^{\infty}dk(-2\pi i)e^{-i\nu_{k}t}e^{ikx_{1}}[\frac{e^{iq_{2}(|x_{2}|-ct)}-e^{iq_{1}(|x_{2}|-ct)}}{q_{2}-q_{1}}\theta(ct-|x_{2}|)]$
+\begin_inset Formula $=\int_{-\infty}^{\infty}dk(-2\pi i)e^{-i\nu_{k}t}e^{ikx_{1}}[\frac{e^{iq_{2}(|x_{2}|-ct)}-e^{iq_{1}(|x_{2}|-ct)}}{q_{2}-q_{1}}\theta(ct-x_{2})]$
 \end_inset
 
 
@@ -231,28 +253,28 @@ redefine
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\int_{-\infty}^{\infty}dk(-2\pi i)e^{-i\nu_{k}t}e^{ikx_{1}}[\frac{e^{i(q_{2}-\nu_{k})(|x_{2}|-ct)}-e^{iq_{1}(|x_{2}|-ct)}}{q_{2}-q_{1}-\nu_{k}}\theta(ct-|x_{2}|)$
+\begin_inset Formula $=\int_{-\infty}^{\infty}dk(-2\pi i)e^{-i\nu_{k}t}e^{ikx_{1}}[\frac{e^{i(q_{2}-k)(x_{2}-ct)}-e^{iq_{1}(x_{2}-ct)}}{q_{2}-q_{1}-k}\theta(ct-x_{2})$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\int_{0}^{\infty}dk(-2\pi i)e^{-ikt}e^{ikx_{1}}[\frac{e^{i(q_{2}-k)(|x_{2}|-ct)}-e^{iq_{1}(|x_{2}|-ct)}}{q_{2}-q_{1}-k}\theta(ct-|x_{2}|)+\int_{0}^{\infty}dk(-2\pi i)e^{-ikt}e^{-ikx_{1}}[\frac{e^{i(q_{2}-k)(|x_{2}|-ct)}-e^{iq_{1}(|x_{2}|-ct)}}{q_{2}-q_{1}-k}\theta(ct-|x_{2}|)$
+\begin_inset Formula $=\int_{0}^{\infty}dk(-2\pi i)e^{-ikt}e^{ikx_{1}}[\frac{e^{i(q_{2}-k)(x_{2}-ct)}-e^{iq_{1}(x_{2}-ct)}}{q_{2}-q_{1}-k}\theta(ct-x_{2})+\int_{0}^{\infty}dk(-2\pi i)e^{-ikt}e^{-ikx_{1}}[\frac{e^{i(q_{2}-k)(x_{2}-ct)}-e^{iq_{1}(x_{2}-ct)}}{q_{2}-q_{1}-k}\theta(ct-x_{2})$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\int_{0}^{\infty}dk(-2\pi i)(e^{-ikt}e^{ikx_{1}}+e^{-ikt}e^{-ikx_{1}})\frac{e^{i(q_{2}-k)(|x_{2}|-ct)}-e^{iq_{1}(|x_{2}|-ct)}}{q_{2}-q_{1}-k}\theta(ct-|x_{2}|)$
+\begin_inset Formula $=\int_{0}^{\infty}dk(-2\pi i)(e^{-ikt}e^{ikx_{1}}+e^{-ikt}e^{-ikx_{1}})\frac{e^{i(q_{2}-k)(x_{2}-ct)}-e^{iq_{1}(x_{2}-ct)}}{q_{2}-q_{1}-k}\theta(ct-x_{2})$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\approx\int_{-\infty}^{\infty}dk(-2\pi i)(e^{-ikt}e^{ikx_{1}}+e^{-ikt}e^{-ikx_{1}})\frac{e^{iq_{2}(|x_{2}|-ct)}e^{-ik(|x_{2}|-ct)}-e^{iq_{1}(|x_{2}|-ct)}}{q_{2}-q_{1}-k}\theta(ct-|x_{2}|)$
+\begin_inset Formula $\approx\int_{-\infty}^{\infty}dk(-2\pi i)(e^{-ikt}e^{ikx_{1}}+e^{-ikt}e^{-ikx_{1}})\frac{e^{i(q_{2}-k)(x_{2}-ct)}-e^{iq_{1}(x_{2}-ct)}}{q_{2}-q_{1}-k}\theta(ct-x_{2})$
 \end_inset
 
 
@@ -263,7 +285,7 @@ first term:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\approx\int_{-\infty}^{\infty}dk(-2\pi i)(e^{ik(x_{1}-|x_{2}|)}+e^{-ik(x_{1}+|x_{2}|)})\frac{e^{iq_{2}(|x_{2}|-ct)}}{q_{2}-q_{1}-k}\theta(ct-|x_{2}|)$
+\begin_inset Formula $\approx\int_{-\infty}^{\infty}dk(-2\pi i)(e^{ik(x_{1}-x_{2})}+e^{-ik(x_{1}+x_{2})})\frac{e^{iq_{2}(x_{2}-ct)}}{q_{2}-q_{1}-k}\theta(ct-x_{2})$
 \end_inset
 
 
@@ -278,7 +300,7 @@ when
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=(-2\pi i)^{2}(e^{i(q_{2}-q_{1})(x_{1}-|x_{2}|)}\theta(x_{1}-|x_{2}|)\theta(k)+e^{-i(q_{2}-q_{1})(x_{1}+|x_{2}|)}\theta(-x_{1}-|x_{2}|)\theta(-k))e^{iq_{2}(|x_{2}|-ct)}\theta(ct-|x_{2}|)$
+\begin_inset Formula $=(-2\pi i)^{2}(e^{i(q_{2}-q_{1})(x_{1}-x_{2})}\theta(x_{1}-x_{2})+e^{-i(q_{2}-q_{1})(x_{1}+x_{2})}\theta(-x_{1}-x_{2}))e^{iq_{2}(x_{2}-ct)}\theta(ct-x_{2})$
 \end_inset
 
 
@@ -293,7 +315,7 @@ when
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=(-2\pi i)^{2}(e^{i(q_{2}-q_{1})(x_{1}-|x_{2}|)}\theta(-x_{1}+|x_{2}|)\theta(k)+e^{-i(q_{2}-q_{1})(x_{1}+|x_{2}|)}\theta(x_{1}+|x_{2}|)\theta(-k))e^{iq_{2}(|x_{2}|-ct)}\theta(ct-|x_{2}|)$
+\begin_inset Formula $=(-2\pi i)^{2}(e^{i(q_{2}-q_{1})(x_{1}-x_{2})}\theta(-x_{1}+x_{2})+e^{-i(q_{2}-q_{1})(x_{1}+x_{2})}\theta(x_{1}+x_{2}))e^{iq_{2}(x_{2}-ct)}\theta(ct-x_{2})$
 \end_inset
 
 
@@ -304,10 +326,14 @@ second term:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\approx\int_{-\infty}^{\infty}dk(-2\pi i)(e^{-ikt}e^{ikx_{1}}+e^{-ikt}e^{-ikx_{1}})\frac{-e^{iq_{1}(|x_{2}|-ct)}}{q_{2}-q_{1}-k}\theta(ct-|x_{2}|)$
+\begin_inset Formula $\approx\int_{-\infty}^{\infty}dk(-2\pi i)(e^{ik(x_{1}-ct)}+e^{-ik(x_{1}+ct)})\frac{e^{iq_{1}(x_{2}-ct)}}{k-(q_{2}-q_{1})}\theta(ct-x_{2})$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+since Req2>Req1, we can drop the second term for incoming wave
 \end_layout
 
 \begin_layout Standard
@@ -315,8 +341,11 @@ when
 \begin_inset Formula $Imq_{2}>Imq_{1}$
 \end_inset
 
- this gives 
-\begin_inset Formula $\theta(x_{1}-ct)$
+ this gives:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\approx(-2\pi i)^{2}(e^{i(q_{2}-q_{1})(x_{1}-ct)}\theta(x_{1}-ct))e^{iq_{1}(x_{2}-ct)}\theta(ct-x_{2})$
 \end_inset
 
 
@@ -324,21 +353,14 @@ when
 
 \begin_layout Standard
 when 
-\begin_inset Formula $Imq_{2}>Imq_{1}$
+\begin_inset Formula $Imq_{2}<Imq_{1}$
 \end_inset
 
  :
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=(-2\pi i)^{2}(e^{i(q_{2}-q_{1})(x_{1}-ct)}\theta(ct-x_{1})+e^{i(q_{2}-q_{1})(-x_{1}-ct)}\theta(ct+x_{1}))(-e^{iq_{1}(|x_{2}|-ct)})\theta(ct-|x_{2}|)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $=(-2\pi i)^{2}e^{i(q_{2}-q_{1})(|x_{1}|-ct)}(-e^{iq_{1}(|x_{2}|-ct)})\theta(ct-|x_{1}|)\theta(ct-|x_{2}|)$
+\begin_inset Formula $=(-2\pi i)^{2}(e^{i(q_{2}-q_{1})(x_{1}-ct)}\theta(ct-x_{1}))e^{iq_{1}(x_{2}-ct)}\theta(ct-x_{2})$
 \end_inset
 
 
@@ -368,7 +390,7 @@ FT of the third term:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $f_{3}(x_{1},x_{2})=\int_{-\infty}^{\infty}dk\int_{-\infty}^{\infty}dq\frac{e^{i(-\nu_{k}-\omega_{bc})t-\frac{\Gamma_{b}}{2}t}e^{ikx_{1}}e^{iqx_{2}}}{[i(\nu_{k}-\omega_{ab})-\frac{1}{2}(\Gamma_{a}-\Gamma_{b})][i(\nu_{q}-\omega_{bc})-\frac{1}{2}\Gamma_{b}]}\propto\theta(-|q|)=0$
+\begin_inset Formula $f_{2}(x_{1},x_{2})=\int_{-\infty}^{\infty}dk\int_{-\infty}^{\infty}dq\frac{e^{i(-\nu_{k}-\omega_{bc})t-\frac{\Gamma_{b}}{2}t}e^{ikx_{1}}e^{iqx_{2}}}{[i(\nu_{k}-\omega_{ab})-\frac{1}{2}(\Gamma_{a}-\Gamma_{b})][i(\nu_{q}-\omega_{bc})-\frac{1}{2}\Gamma_{b}]}\propto\theta(-|q|)=0$
 \end_inset
 
 
