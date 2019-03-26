@@ -1,0 +1,483 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula $a_{k}^{\dagger}=\int_{-\infty}^{\infty}dxa^{\dagger}(x)e^{ikx}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $|\psi\rangle=\int_{-\infty}^{\infty}dkf(k,t)|1_{k}\rangle=\int_{-\infty}^{\infty}dx\int_{-\infty}^{\infty}dkf(k,t)e^{ikx}a^{\dagger}(x)|0_{k}\rangle=\int_{-\infty}^{\infty}dxF(x,t)|1(x)\rangle$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H_{int}=\hbar\sum_{\vec{k},\,i}[g_{\vec{k}}(\vec{r}_{0})S_{i}^{+}(t)\hat{a}_{\vec{k}}(t)+H.c.]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g_{\vec{k}}(\vec{r}_{0})=\sqrt{\frac{\omega_{\vec{k}}}{2\epsilon_{0}\hbar V}}\mu e^{i\vec{k}\cdot\vec{r}_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $|\psi\rangle=c_{a}(t)|a,0\rangle+\sum_{\vec{k}}g(k,t)|b,1_{k}\rangle++\sum_{\vec{k},\vec{q}}f(k,q,t)|b,1_{k},1_{q}\rangle$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+single photon:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(k,t)=\sum_{k}g_{k}[\frac{e^{-i\nu_{k}t}-e^{-i\omega t-\Gamma t/2}}{\nu_{k}-\omega+i\Gamma/2}]|1_{k}\rangle$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F(x,t)=\int_{-\infty}^{\infty}dkg_{k}[\frac{e^{ikx-i\nu_{k}t}}{\nu_{k}-(\omega-i\Gamma/2)}-\frac{e^{ikx-i\omega t-\Gamma t/2}}{\nu_{k}-(\omega-i\Gamma/2)}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=g_{k_{0}}\int_{-\infty}^{\infty}dk[\frac{e^{ikx-i\nu_{k}t}}{\nu_{k}-(\omega-i\Gamma/2)}-\frac{e^{ikx-i\omega t-\Gamma t/2}}{\nu_{k}-(\omega-i\Gamma/2)}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=g_{k_{0}}\int_{-\infty}^{\infty}dk[\frac{e^{ikx-i\nu_{k}t}}{\nu_{k}-(\omega-i\Gamma/2)}-\frac{e^{ikx-i\omega t-\Gamma t/2}}{\nu_{k}-(\omega-i\Gamma/2)}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F(x,t)=g_{k_{0}}\int_{0}^{\infty}dk\frac{e^{ikx-i\nu_{k}t}}{\nu_{k}-(\omega-i\Gamma/2)}+g_{k_{0}}\int_{-\infty}^{0}dk\frac{e^{ikx-i\nu_{k}t}}{\nu_{k}-(\omega-i\Gamma/2)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F(x,t)=-2\pi ig_{k_{0}}e^{ik_{0}(x-ct)}e^{-(\Gamma/2)(ct-x)}\theta(ct-x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in the Schrodinger picture:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(k,q,t)=-(\frac{e^{-i(\nu_{k}+\nu_{q})t}}{[i(\nu_{k}+\nu_{q}-\omega_{ac})-\frac{1}{2}\Gamma_{a}][i(\nu_{q}-\omega_{bc})-\frac{1}{2}\Gamma_{b}]}+\frac{e^{i(-\omega_{ac})t-\frac{\Gamma_{a}}{2}t}}{[i(\nu_{k}+\nu_{q}-\omega_{ac})-\frac{1}{2}\Gamma_{a}][i(\nu_{k}-\omega_{ab})-\frac{1}{2}(\Gamma_{a}-\Gamma_{b})]}-\frac{e^{i(-\nu_{k}-\omega_{bc})t-\frac{\Gamma_{b}}{2}t}}{[i(\nu_{k}-\omega_{ab})-\frac{1}{2}(\Gamma_{a}-\Gamma_{b})][i(\nu_{q}-\omega_{bc})-\frac{1}{2}\Gamma_{b}]})$
+\end_inset
+
+ ( overall factors 
+\begin_inset Formula $\sqrt{\nu_{ab}\nu_{bc}}(\frac{L}{2\pi})^{2}\frac{1}{2\epsilon\hbar V}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nu_{q}\sim\omega_{bc},\,\nu_{k}\sim\omega_{ac},$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+FT of the first term: build the axis so that 
+\begin_inset Formula $x_{2}>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{1}(x_{1},x_{2})=\int_{-\infty}^{\infty}dk\int_{-\infty}^{\infty}dq\frac{-e^{-i(\nu_{k}+\nu_{q})t}e^{ikx_{1}}e^{iqx_{2}}}{[i(\nu_{k}+\nu_{q}-\omega_{ac})-\frac{1}{2}\Gamma_{a}][i(\nu_{q}-\omega_{bc})-\frac{1}{2}\Gamma_{b}]}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\int_{-\infty}^{\infty}dk\int_{0}^{\infty}dq\frac{-e^{-i\nu_{k}t}e^{ikx_{1}}e^{iq(x_{2}-ct)}}{[i(\nu_{k}+\nu_{q}-\omega_{ac})-\frac{1}{2}\Gamma_{a}][i(\nu_{q}-\omega_{bc})-\frac{1}{2}\Gamma_{b}]}+\int_{-\infty}^{\infty}dk\int_{-\infty}^{0}dq\frac{-e^{-i(\nu_{k}+\nu_{q})t}e^{ikx_{1}}e^{iqx_{2}}}{[i(\nu_{k}+\nu_{q}-\omega_{ac})-\frac{1}{2}\Gamma_{a}][i(\nu_{q}-\omega_{bc})-\frac{1}{2}\Gamma_{b}]}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+since |
+\begin_inset Formula $i(\hbar q-\omega_{bc})-\frac{1}{2}\Gamma_{b}|\gg1$
+\end_inset
+
+ when q<0
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\int_{-\infty}^{\infty}dk\int_{-\infty}^{\infty}dq\frac{-e^{-i\nu_{k}t}e^{ikx_{1}}e^{iq(x_{2}-ct)}}{[i(\nu_{k}+\hbar q-\omega_{ac})-\frac{1}{2}\Gamma_{a}][i(\hbar q-\omega_{bc})-\frac{1}{2}\Gamma_{b}]}+\int_{-\infty}^{\infty}dk\int_{-\infty}^{\infty}dq\frac{-e^{-i\nu_{k}}e^{ikx_{1}}e^{iq(-ct-x_{2})}}{[i(\hbar k+\hbar q-\omega_{ac})-\frac{1}{2}\Gamma_{a}][i(\hbar q-\omega_{bc})-\frac{1}{2}\Gamma_{b}]}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+singularities: 
+\begin_inset Formula $q_{1}=(-\frac{i}{2}\Gamma_{b}+\omega_{bc})/\hbar$
+\end_inset
+
+, 
+\begin_inset Formula $q_{2}=(-\frac{i}{2}\Gamma_{a}+\omega_{ac}-\nu_{k})/\hbar$
+\end_inset
+
+ in the lower half plane
+\end_layout
+
+\begin_layout Standard
+we can drop the second term because it is the incoming wave
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{1}(x_{1},x_{2})=\int_{-\infty}^{\infty}dk(-2\pi i)e^{-i\nu_{k}t}e^{ikx_{1}}[\frac{e^{iq_{2}(x_{2}-ct)}-e^{iq_{1}(x_{2}-ct)}}{q_{2}-q_{1}}\theta(ct-x_{2})]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+redefine 
+\begin_inset Formula $q_{2}=(-\frac{i}{2}\Gamma_{a}+\omega_{ac})/\hbar$
+\end_inset
+
+, 
+\begin_inset Formula $Req_{2}>Req_{1}>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\int_{-\infty}^{\infty}dk(-2\pi i)e^{-i\nu_{k}t}e^{ikx_{1}}[\frac{e^{i(q_{2}-k)(x_{2}-ct)}-e^{iq_{1}(x_{2}-ct)}}{q_{2}-q_{1}-k}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\int_{0}^{\infty}dk(-2\pi i)e^{-ikt}e^{ikx_{1}}\frac{e^{i(q_{2}-k)(x_{2}-ct)}-e^{iq_{1}(x_{2}-ct)}}{q_{2}-q_{1}-k}\theta(ct-x_{2})+\int_{0}^{\infty}dk(-2\pi i)e^{-ikt}e^{-ikx_{1}}\frac{e^{i(q_{2}-k)(x_{2}-ct)}-e^{iq_{1}(x_{2}-ct)}}{q_{2}-q_{1}-k}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\int_{0}^{\infty}dk(-2\pi i)(e^{-ikt}e^{ikx_{1}}+e^{-ikt}e^{-ikx_{1}})\frac{e^{i(q_{2}-k)(x_{2}-ct)}-e^{iq_{1}(x_{2}-ct)}}{q_{2}-q_{1}-k}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{1}(x_{1},x_{2})=\int_{-\infty}^{\infty}dk(-2\pi i)(e^{-ikt}e^{ikx_{1}}+e^{-ikt}e^{-ikx_{1}})\frac{e^{i(q_{2}-k)(x_{2}-ct)}-e^{iq_{1}(x_{2}-ct)}}{q_{2}-q_{1}-k}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+first term:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\approx\int_{-\infty}^{\infty}dk(-2\pi i)(e^{ik(x_{1}-x_{2})}+e^{-ik(x_{1}+x_{2})})\frac{e^{iq_{2}(x_{2}-ct)}}{q_{2}-q_{1}-k}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+when 
+\begin_inset Formula $Imq_{2}>Imq_{1}$
+\end_inset
+
+ this gives :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=(-2\pi i)^{2}(e^{i(q_{2}-q_{1})(x_{1}-x_{2})}\theta(x_{1}-x_{2})+e^{-i(q_{2}-q_{1})(x_{1}+x_{2})}\theta(-x_{1}-x_{2}))e^{iq_{2}(x_{2}-ct)}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+when 
+\begin_inset Formula $Imq_{2}<Imq_{1}$
+\end_inset
+
+ this gives :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{1}(x_{1},x_{2})\propto e^{i(q_{2}-q_{1})(x_{1}-x_{2})}\theta(-x_{1}+x_{2})e^{iq_{2}(x_{2}-ct)}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $+e^{-i(q_{2}-q_{1})(x_{1}+x_{2})}\theta(x_{1}+x_{2})e^{iq_{2}(x_{2}-ct)}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+second term:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\approx\int_{-\infty}^{\infty}dk(-2\pi i)(e^{ik(x_{1}-ct)}+e^{-ik(x_{1}+ct)})\frac{e^{iq_{1}(x_{2}-ct)}}{k-(q_{2}-q_{1})}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+when 
+\begin_inset Formula $Imq_{2}>Imq_{1}$
+\end_inset
+
+ this gives:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\approx(-2\pi i)^{2}(e^{i(q_{2}-q_{1})(x_{1}-ct)}\theta(x_{1}-ct)+e^{-i(q_{2}-q_{1})(x_{1}+ct)}\theta(-x_{1}-ct))e^{iq_{1}(x_{2}-ct)}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+when 
+\begin_inset Formula $Imq_{2}<Imq_{1}$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=(-2\pi i)^{2}(e^{i(q_{2}-q_{1})(x_{1}-ct)}\theta(ct-x_{1})+e^{-i(q_{2}-q_{1})(x_{1}+ct)}\theta(x_{1}+ct))e^{iq_{1}(x_{2}-ct)}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Summary:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q_{1}=(-\frac{i}{2}\Gamma_{b}+\omega_{bc})/\hbar$
+\end_inset
+
+ 
+\begin_inset Formula $q_{2}=(-\frac{i}{2}\Gamma_{a}+\omega_{ac})/\hbar$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus, when 
+\begin_inset Formula $Imq_{2}<Imq_{1}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{1}(x_{1},x_{2})\propto e^{i(q_{2}-q_{1})(x_{1}-x_{2})}\theta(-x_{1}+x_{2})e^{iq_{2}(x_{2}-ct)}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $+e^{-i(q_{2}-q_{1})(x_{1}+x_{2})}\theta(x_{1}+x_{2})e^{iq_{2}(x_{2}-ct)}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $+e^{i(q_{2}-q_{1})(x_{1}-ct)}\theta(ct-x_{1})e^{iq_{1}(x_{2}-ct)}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $+e^{-i(q_{2}-q_{1})(x_{1}+ct)}\theta(x_{1}+ct)e^{iq_{1}(x_{2}-ct)}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=e^{(i\omega_{ab}+\frac{1}{2}\Gamma_{a}-\frac{1}{2}\Gamma_{b})(x_{1}-x_{2})}\theta(-x_{1}+x_{2})e^{(-\frac{1}{2}\Gamma_{a}-i\omega_{ac})(-x_{2}+ct)}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $+e^{-(i\omega_{ab}+\frac{1}{2}\Gamma_{a}-\frac{1}{2}\Gamma_{b})(x_{1}+x_{2})}\theta(x_{1}+x_{2})e^{i(-\frac{i}{2}\Gamma_{a}+\omega_{ac})(x_{2}-ct)}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $+e^{i(i\omega_{ab}+\frac{1}{2}\Gamma_{a}-\frac{1}{2}\Gamma_{b})(x_{1}-ct)}\theta(ct-x_{1})e^{i(-\frac{i}{2}\Gamma_{b}+\omega_{bc})(x_{2}-ct)}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $+e^{-(i\omega_{ab}+\frac{1}{2}\Gamma_{a}-\frac{1}{2}\Gamma_{b})(x_{1}+ct)}\theta(x_{1}+ct)e^{i(-\frac{i}{2}\Gamma_{b}+\omega_{bc})(x_{2}-ct)}\theta(ct-x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus, when 
+\begin_inset Formula $Imq_{2}>Imq_{1}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+FT of the second term:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{2}(x_{1},x_{2})=\int_{-\infty}^{\infty}dk\int_{-\infty}^{\infty}dq\frac{e^{i(-\omega_{ac})t-\frac{\Gamma_{a}}{2}t}e^{ikx_{1}}e^{iqx_{2}}}{[i(\nu_{k}+\nu_{q}-\omega_{ac})-\frac{1}{2}\Gamma_{a}][i(\nu_{k}-\omega_{ab})-\frac{1}{2}(\Gamma_{a}-\Gamma_{b})]}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is proportional to 
+\begin_inset Formula $\theta(-|x_{1}|)\theta(-|x_{2}|)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+FT of the third term:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{2}(x_{1},x_{2})=\int_{-\infty}^{\infty}dk\int_{-\infty}^{\infty}dq\frac{e^{i(-\nu_{k}-\omega_{bc})t-\frac{\Gamma_{b}}{2}t}e^{ikx_{1}}e^{iqx_{2}}}{[i(\nu_{k}-\omega_{ab})-\frac{1}{2}(\Gamma_{a}-\Gamma_{b})][i(\nu_{q}-\omega_{bc})-\frac{1}{2}\Gamma_{b}]}\propto\theta(-|q|)=0$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
